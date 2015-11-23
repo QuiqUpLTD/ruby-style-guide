@@ -1086,6 +1086,9 @@ condition](#safe-assignment-in-condition).
     # good
     validates :name, presence: true, length: { within: 1..10 }
   end
+  
+  # RSpec : good
+  let(:variable) { create :factory, :with_no_parentheses }
   ```
 
 * <a name="no-args-no-parens"></a>
